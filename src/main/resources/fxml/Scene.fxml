@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="369.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.lab2.neuronnetwork.FXMLController">
+   <children>
+      <LineChart fx:id="graphic" layoutY="118.0" prefHeight="325.0" prefWidth="656.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Button fx:id="oneEpoch" layoutX="29.0" layoutY="23.0" mnemonicParsing="false" onAction="#oneEpochClick" prefHeight="25.0" prefWidth="81.0" text="1 эпоха" />
+      <Button fx:id="manyEpoches" layoutX="29.0" layoutY="61.0" mnemonicParsing="false" onAction="#manyEpochesClick" text="Много эпох" />
+      <Label fx:id="sizeLabel" layoutX="146.0" layoutY="27.0" text="Размер: " />
+      <Label fx:id="errorBorderLabel" layoutX="302.0" layoutY="73.0" text="Уровень ошибки: " />
+      <Label fx:id="currentEpochLabel" layoutX="146.0" layoutY="73.0" text="Текущая эпоха: " />
+      <Label fx:id="resultLabel" layoutX="302.0" layoutY="27.0" text="Результат: " />
+      <TextArea fx:id="epochesResultArea" layoutX="442.0" layoutY="18.0" prefHeight="86.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
